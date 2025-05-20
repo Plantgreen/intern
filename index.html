@@ -31,7 +31,7 @@
       position: relative;
     }
 
-    nav {
+/*     nav {
       position: absolute;
       top: 0;
       width: 100%;
@@ -57,6 +57,34 @@
       font-weight: 500;
       cursor: pointer;
     }
+
+    
+ */
+    
+    nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.contact {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition:background 0.3s;
+}
 
     .hero-title {
       font-size: 3rem;
@@ -152,11 +180,12 @@
 </head>
 <body>
   <header>
-    <nav>
-      <div class="logo">Plant Green Inertia</div>
-      <div class="contact" onclick="window.open('https://www.plantgreeninertia.com/contact-us', '_blank')">Contact Us</div>
-    </nav>
-
+   <nav>
+  <div class="logo">
+    <img src="images/PGI .jpeg.jpg" alt="Plant Green Inertia Logo">
+  </div>
+  <div class="contact" onclick="window.open('https://www.plantgreeninertia.com/contact-us', '_blank')">Contact Us</div>
+</nav>
     <div class="hero-title">Internships at PGI</div>
     <div class="hero-subtitle">
       Launch your career with real-world experience at a leading organization.
